@@ -27,7 +27,9 @@
 
 / {
     behaviors {
-        shift_caps: compatible = "zmk,behavior-tap-dance";
+        shift_caps: shift_caps{
+
+        compatible = "zmk,behavior-tap-dance";
 
         display-name = "Shift/Caps Lock Tap Dance";
         #binding-cells = <0>;
