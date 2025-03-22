@@ -33,7 +33,7 @@ layers:
   - Z
   - X
   - {t: C, h: Gui+C}
-  - V
+  - {t: V, h: Gui+V}
   - B
   - SPACE
   - DOWN
