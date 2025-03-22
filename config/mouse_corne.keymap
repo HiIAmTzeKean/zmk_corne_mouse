@@ -35,6 +35,14 @@
 
             tapping-term-ms = <250>;
         };
+
+        c_copy: c_copy {
+            compatible = "zmk,behavior-hold-tap";
+            label = "C_COPY";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            bindings = <&ccopy>, <&kp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -62,16 +70,25 @@
         };
     };
 
+    macros {
+        ccopy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp RIGHT_COMMAND>;
+            label = "COPY";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB      &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&shift_caps  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &shift_caps
-&kp LCTRL    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                           &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB      &kp Q  &kp W  &kp E        &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&shift_caps  &kp A  &kp S  &kp D        &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &shift_caps
+&kp LCTRL    &kp Z  &kp X  &c_copy 0 C  &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                           &kp LGUI     &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
