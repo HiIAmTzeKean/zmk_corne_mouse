@@ -48,7 +48,7 @@ layers:
   - {t: SPACE, h: Fn}
   - {t: ENTER, h: Fn}
   - SYMBOL
-  - RALT
+  - {t: RIGHT ALT, h: RGUI}
   NUMBER:
   - {t: ▽, type: trans}
   - '1'
