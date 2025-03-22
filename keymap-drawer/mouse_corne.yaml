@@ -32,7 +32,7 @@ layers:
   - LCTRL
   - Z
   - X
-  - {t: C, h: '&ccopy'}
+  - {t: C, h: Gui+C}
   - V
   - B
   - SPACE
