@@ -1,0 +1,17 @@
+file_format: "1"
+id: mouse_corne
+name: Mouse Corne
+url: https://github.com/HiIAmTzeKean/zmk_corne_mouse
+type: board
+arch: arm
+features:
+  - keys
+  - display
+  - underglow
+  - encoder
+outputs:
+  - usb
+  - ble
+siblings:
+  - mouse_corne_left
+  - mouse_corne_right
