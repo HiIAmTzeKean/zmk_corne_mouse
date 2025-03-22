@@ -114,10 +114,10 @@ layers:
   - BSPC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
+  - '`'
   - ':'
   - '`'
-  - '"'
+  - '>'
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
@@ -129,10 +129,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '~'
   - ;
   - '~'
-  - ''''
+  - <
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
   - _
