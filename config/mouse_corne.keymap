@@ -58,6 +58,7 @@
             bindings = <&kp ESC>;
             key-positions = <2 1>;
             timeout-ms = <20>;
+            layers = <0>;
         };
     };
 
