@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "C_COPY";
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&ccopy>, <&kp>;
         };
     };
@@ -74,7 +74,7 @@
         ccopy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp RIGHT_COMMAND>;
+            bindings = <&kp RIGHT_COMMAND &kp C>;
             label = "COPY";
         };
     };
