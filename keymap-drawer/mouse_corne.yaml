@@ -178,8 +178,8 @@ layers:
   - {t: ▽, type: trans}
   - '&bootloader'
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT USB
+  - OUT BLE
   - PLAY PAUSE
   - MUTE
   - MUTE
