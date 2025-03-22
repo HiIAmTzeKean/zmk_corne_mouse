@@ -42,7 +42,7 @@ layers:
   - ','
   - .
   - /
-  - RIGHT CONTROL
+  - RCTRL
   - LGUI
   - NUMBER
   - {t: SPACE, h: Fn}
