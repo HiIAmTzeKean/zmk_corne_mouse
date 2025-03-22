@@ -248,3 +248,4 @@ layers:
 combos:
 - p: [2, 1]
   k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
