@@ -46,7 +46,7 @@ layers:
   - LGUI
   - NUMBER
   - {t: SPACE, h: Fn}
-  - {t: ENTER, h: PSEUDOSSYM}
+  - {t: ENTER, h: pseudosym}
   - SYMBOL
   - '&opt_cmd'
   NUMBER:
@@ -147,8 +147,8 @@ layers:
   - RET
   - {type: held}
   - {t: ▽, type: trans}
-  PSEUDOSSYM:
-  - BSPC
+  pseudosym:
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -219,7 +219,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
-  - '&bootloader'
+  - ''
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'

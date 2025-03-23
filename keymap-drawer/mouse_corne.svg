@@ -315,8 +315,8 @@ path.combo {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#PSEUDOSSYM">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 70%">PSEUDOSSYM</tspan></text>
+<a href="#pseudosym">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">pseudosym</tspan></text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -749,12 +749,12 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 955)" class="layer-PSEUDOSSYM">
-<text x="0" y="28" class="label" id="PSEUDOSSYM">PSEUDOSSYM:</text>
+<g transform="translate(30, 955)" class="layer-pseudosym">
+<text x="0" y="28" class="label" id="pseudosym">pseudosym:</text>
 <g transform="translate(0, 56)">
-<g transform="translate(28, 49)" class="key keypos-0">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">BSPC</text>
+<g transform="translate(28, 49)" class="key trans keypos-0">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(84, 49)" class="key trans keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1052,7 +1052,6 @@ path.combo {
 </g>
 <g transform="translate(672, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
 </g>
 <g transform="translate(728, 91)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
