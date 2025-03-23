@@ -63,6 +63,15 @@
             tapping-term-ms = <200>;
             bindings = <&kp RALT>, <&kp RGUI>;
         };
+
+        cmd_shift: cmd_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CMD_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&sk LEFT_SHIFT>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -108,7 +117,7 @@
 &kp TAB      &kp Q  &kp W  &kp E              &kp R              &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &shift_caps  &kp A  &kp S  &kp D              &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &shift_caps
 &kp LCTRL    &kp Z  &kp X  &tap_pref LG(C) C  &tap_pref LG(V) V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                           &kp LGUI           &mo 1              &lt 4 SPACE                                               &lt 3 ENTER  &mo 2  &opt_cmd
+                           &cmd_shift         &mo 1              &lt 4 SPACE                                               &lt 3 ENTER  &mo 2  &opt_cmd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
