@@ -108,7 +108,7 @@
 &kp TAB      &kp Q  &kp W  &kp E              &kp R              &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &shift_caps  &kp A  &kp S  &kp D              &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &shift_caps
 &kp LCTRL    &kp Z  &kp X  &tap_pref LG(C) C  &tap_pref LG(V) V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                           &kp LGUI           &mo 1              &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &opt_cmd
+                           &kp LGUI           &mo 1              &lt 4 SPACE                                               &lt 3 ENTER  &mo 2  &opt_cmd
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -129,20 +129,29 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL  &kp AT     &kp HASH       &kp DLLR           &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK        &kp UNDERSCORE  &kp EQUAL  &kp BSPC
-&trans  &trans    &kp GRAVE  &kp COLON      &kp DOUBLE_QUOTES  &kp LESS_THAN               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp PLUS        &kp BSLH   &trans
-&trans  &trans    &kp TILDE  &kp SEMICOLON  &kp SINGLE_QUOTE   &kp GREATER_THAN  &trans                    &mmv MOVE_DOWN                   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS       &kp PIPE   &trans
-                             &trans         &trans             &kp SPACE                                                                    &kp RET                &trans             &trans
+&trans  &kp EXCL  &kp AT  &kp HASH              &kp DLLR       &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK        &trans  &trans  &kp BSPC
+&trans  &trans    &none   &kp NON_US_BACKSLASH  &kp COLON      &kp LESS_THAN               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans  &none   &trans
+&trans  &trans    &none   &kp PIPE              &kp SEMICOLON  &kp GREATER_THAN  &trans                    &mmv MOVE_DOWN                   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans  &none   &trans
+                          &trans                &trans         &kp SPACE                                                                    &kp RET                &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        PSEUDOSSYM {
+            bindings = <
+&kp BSPC  &trans  &trans  &trans  &trans     &trans                               &trans          &trans     &trans          &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &kp GRAVE  &kp DOUBLE_QUOTES            &trans  &trans  &trans  &kp PLUS   &kp EQUAL       &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &kp TILDE  &kp SQT            &trans            &trans          &kp MINUS  &kp UNDERSCORE  &trans  &trans  &trans  &trans
+                          &trans  &trans     &trans                                               &trans     &trans          &trans
+            >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4            &kp F5                                    &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &kp F11
-&sys_reset      &trans      &mkp LCLK     &mkp MCLK     &mkp RCLK         &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader   &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
+&sys_reset      &soft_off   &mkp LCLK     &mkp MCLK     &mkp RCLK         &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader   &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
 &bootloader     &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC  &trans   &trans
                                           &trans        &trans            &trans                                                                     &trans        &trans        &trans
             >;
