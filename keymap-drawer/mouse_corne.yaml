@@ -46,7 +46,7 @@ layers:
   - LGUI
   - NUMBER
   - {t: SPACE, h: Fn}
-  - {t: ENTER, h: Fn}
+  - {t: ENTER, h: PSEUDOSSYM}
   - SYMBOL
   - '&opt_cmd'
   NUMBER:
@@ -109,14 +109,14 @@ layers:
   - ^
   - '&'
   - '*'
-  - _
-  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BSPC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '`'
+  - ''
+  - \
   - ':'
-  - '"'
   - <
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
@@ -124,28 +124,77 @@ layers:
   - (
   - '['
   - '{'
-  - +
-  - \
+  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '~'
+  - ''
+  - '|'
   - ;
-  - ''''
   - '>'
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
   - )
   - ']'
   - '}'
-  - '-'
-  - '|'
+  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SPACE
   - RET
   - {type: held}
+  - {t: ▽, type: trans}
+  PSEUDOSSYM:
+  - BSPC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '"'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - +
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Fn:
   - '&studio_unlock'
@@ -162,7 +211,7 @@ layers:
   - F10
   - F11
   - '&sys_reset'
-  - {t: ▽, type: trans}
+  - '&soft_off'
   - '&mkp LCLK'
   - '&mkp MCLK'
   - '&mkp RCLK'
