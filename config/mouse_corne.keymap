@@ -129,10 +129,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL  &kp AT     &kp HASH       &kp DLLR           &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans    &kp GRAVE  &kp COLON      &kp DOUBLE_QUOTES  &kp GREATER_THAN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-&trans  &trans    &kp TILDE  &kp SEMICOLON  &kp SINGLE_QUOTE   &kp LESS_THAN     &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &trans
-                             &trans         &trans             &kp SPACE                                                                    &kp RET    &trans     &trans
+&trans  &kp EXCL  &kp AT     &kp HASH       &kp DLLR           &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET              &kp AMPS           &kp ASTRK        &kp UNDERSCORE  &kp EQUAL  &kp BSPC
+&trans  &trans    &kp GRAVE  &kp COLON      &kp DOUBLE_QUOTES  &kp LESS_THAN               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp PLUS        &kp BSLH   &trans
+&trans  &trans    &kp TILDE  &kp SEMICOLON  &kp SINGLE_QUOTE   &kp GREATER_THAN  &trans                    &mmv MOVE_DOWN                   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp MINUS       &kp PIPE   &trans
+                             &trans         &trans             &kp SPACE                                                                    &kp RET                &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
