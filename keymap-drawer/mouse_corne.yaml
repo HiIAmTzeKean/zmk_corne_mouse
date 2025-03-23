@@ -109,22 +109,22 @@ layers:
   - ^
   - '&'
   - '*'
-  - (
-  - )
+  - _
+  - '='
   - BSPC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
   - ':'
   - '"'
-  - '>'
+  - <
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
-  - '-'
-  - '='
+  - (
   - '['
-  - ']'
+  - '{'
+  - +
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,13 +132,13 @@ layers:
   - '~'
   - ;
   - ''''
-  - <
+  - '>'
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
-  - _
-  - +
-  - '{'
+  - )
+  - ']'
   - '}'
+  - '-'
   - '|'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
