@@ -325,10 +325,7 @@ path.combo {
 </a></g>
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">RIGHT</tspan><tspan x="0" dy="1.2em">ALT</tspan>
-</text>
-<text x="0" y="24" class="key hold">RGUI</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;opt_cmd</tspan></text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>

@@ -48,7 +48,7 @@ layers:
   - {t: SPACE, h: Fn}
   - {t: ENTER, h: Fn}
   - SYMBOL
-  - {t: RIGHT ALT, h: RGUI}
+  - '&opt_cmd'
   NUMBER:
   - {t: ▽, type: trans}
   - '1'
