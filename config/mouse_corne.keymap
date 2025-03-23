@@ -68,9 +68,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CMD_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&sk LEFT_SHIFT>;
+            bindings = <&kp LGUI>, <&sshift LEFT_SHIFT>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
+        };
+
+        sshift: sshift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SSHIFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <2000>;
         };
     };
 
