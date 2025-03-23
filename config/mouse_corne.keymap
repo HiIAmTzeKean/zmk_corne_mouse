@@ -138,25 +138,28 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        PSEUDOSSYM {
+        raise_pseudo {
             bindings = <
-&kp BSPC  &trans  &trans  &trans  &trans     &trans                               &trans          &trans     &trans          &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &kp GRAVE  &kp DOUBLE_QUOTES            &trans  &trans  &trans  &kp PLUS   &kp EQUAL       &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &kp TILDE  &kp SQT            &trans            &trans          &kp MINUS  &kp UNDERSCORE  &trans  &trans  &trans  &trans
-                          &trans  &trans     &trans                                               &trans     &trans          &trans
+&trans  &trans  &trans  &trans  &trans     &trans                               &trans          &trans     &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp GRAVE  &kp DOUBLE_QUOTES            &trans  &trans  &trans  &kp PLUS   &kp EQUAL       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp TILDE  &kp SQT            &trans            &trans          &kp MINUS  &kp UNDERSCORE  &trans  &trans  &trans  &trans
+                        &trans  &trans     &trans                                               &trans     &trans          &trans
             >;
+
+            label = "pseudosym";
         };
 
-        layer_3 {
+        function {
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4            &kp F5                                    &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &kp F11
-&sys_reset      &soft_off   &mkp LCLK     &mkp MCLK     &mkp RCLK         &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader   &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
+&sys_reset      &soft_off   &mkp LCLK     &mkp MCLK     &mkp RCLK         &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
 &bootloader     &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC  &trans   &trans
                                           &trans        &trans            &trans                                                                     &trans        &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "Fn";
         };
     };
 };
