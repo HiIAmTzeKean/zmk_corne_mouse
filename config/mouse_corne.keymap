@@ -135,10 +135,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1  &kp N2        &kp N3        &kp N4        &kp N5                                      &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DEL
-&trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &trans  &trans        &trans        &trans        &trans        &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &trans    &trans  &trans     &kp END   &kp PG_DN
-                              &trans        &trans        &trans                                                                       &kp INS   &kp DEL   &trans
+&trans  &kp N1  &kp N2  &kp N3           &kp N4             &kp N5                                               &mmv MOVE_UP                     &kp N6    &kp N7          &kp N8  &kp N9     &kp N0    &kp DEL
+&trans  &none   &none   &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN        &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none   &none   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none           &none   &none      &kp END   &kp PG_DN
+                        &trans           &trans             &trans                                                                                &kp INS   &sk LEFT_SHIFT  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -171,7 +171,7 @@
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4            &kp F5                                    &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &kp F11
-&sys_reset      &soft_off   &mkp LCLK     &mkp MCLK     &mkp RCLK         &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
+&sys_reset      &soft_off   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &mkp LCLK     &mkp MCLK      &mkp RCLK      &trans   &trans
 &bootloader     &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC  &trans   &trans
                                           &trans        &trans            &trans                                                                     &trans        &trans        &trans
             >;
