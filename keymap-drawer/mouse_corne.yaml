@@ -97,7 +97,7 @@ layers:
   - {t: ▽, type: trans}
   - INS
   - {t: LEFT SHIFT, h: sticky}
-  - {t: ▽, type: trans}
+  - RGUI
   SYMBOL:
   - {t: ▽, type: trans}
   - '!'
