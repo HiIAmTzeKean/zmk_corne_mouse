@@ -15,19 +15,19 @@ layers:
   - P
   - BSPC
   - '&shift_caps'
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: LGUI}
+  - {t: F, h: LEFT SHIFT}
   - G
   - LEFT
   - ENTER
   - RIGHT
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RGUI}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RCTRL}
   - '&shift_caps'
   - LCTRL
   - Z
@@ -114,31 +114,31 @@ layers:
   - BSPC
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - \
+  - '}'
+  - ']'
+  - )
   - ':'
-  - <
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
+  - ':'
   - (
   - '['
   - '{'
   - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - '|'
+  - '{'
+  - '['
+  - (
   - ;
-  - '>'
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
+  - ;
   - )
   - ']'
   - '}'
-  - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -163,8 +163,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
   - '`'
+  - '>'
   - '='
   - '"'
   - ''
@@ -178,8 +178,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
   - '~'
+  - <
   - _
   - ''''
   - ''
