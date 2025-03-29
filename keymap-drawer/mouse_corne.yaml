@@ -68,7 +68,7 @@ layers:
   - ''
   - '}'
   - ']'
-  - )
+  - '|'
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
@@ -83,7 +83,7 @@ layers:
   - ''
   - '{'
   - '['
-  - (
+  - \
   - MUTE
   - '&mmv MOVE_DOWN'
   - ''
@@ -172,8 +172,8 @@ layers:
   - ''
   - +
   - '='
-  - ''
-  - ''
+  - '>'
+  - '|'
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -186,8 +186,8 @@ layers:
   - ''
   - '-'
   - _
-  - ''
-  - ''
+  - <
+  - \
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
