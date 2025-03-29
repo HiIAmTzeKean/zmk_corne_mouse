@@ -135,10 +135,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3           &kp N4             &kp N5                                               &mmv MOVE_UP                     &kp N6    &kp N7              &kp N8    &kp N9     &kp N0    &kp DEL
-&trans  &none   &none   &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN            &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &none   &none   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none               &none     &none      &kp END   &kp PG_DN
-                        &trans           &trans             &trans                                                                                &kp INS   &sshift LEFT_SHIFT  &sk RGUI
+&trans  &kp N1  &kp N2  &kp N3           &kp N4             &kp N5                                              &mmv MOVE_UP                     &kp N6    &kp N7              &kp N8    &kp N9     &kp N0    &kp DEL
+&trans  &none   &none   &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN            &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none   &none   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp NON_US_BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none               &none     &none      &kp END   &kp PG_DN
+                        &trans           &trans             &trans                                                                               &kp INS   &sshift LEFT_SHIFT  &sk RGUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -158,9 +158,9 @@
 
         raise_pseudo {
             bindings = <
-&trans  &none  &none      &none             &none           &none                              &none         &none      &none           &none   &none  &none  &trans
-&trans  &none  &kp GRAVE  &kp GREATER_THAN  &kp EQUAL       &kp DOUBLE_QUOTES           &none  &none  &none  &kp PLUS   &kp EQUAL       &none   &none  &none  &trans
-&trans  &none  &kp TILDE  &kp LESS_THAN     &kp UNDERSCORE  &kp SQT            &none           &none         &kp MINUS  &kp UNDERSCORE  &none   &none  &none  &trans
+&trans  &none  &none      &none             &none           &none                              &none         &none      &none           &none             &none                 &none  &trans
+&trans  &none  &kp GRAVE  &kp GREATER_THAN  &kp EQUAL       &kp DOUBLE_QUOTES           &none  &none  &none  &kp PLUS   &kp EQUAL       &kp GREATER_THAN  &kp PIPE              &none  &trans
+&trans  &none  &kp TILDE  &kp LESS_THAN     &kp UNDERSCORE  &kp SQT            &none           &none         &kp MINUS  &kp UNDERSCORE  &kp LESS_THAN     &kp NON_US_BACKSLASH  &none  &trans
                           &trans            &trans          &none                                            &trans     &trans          &trans
             >;
 
