@@ -43,12 +43,12 @@ layers:
   - .
   - /
   - RCTRL
-  - '&cmd_shift'
+  - '&cmd_scmd'
   - NUMBER
   - {t: SPACE, h: Fn}
   - {t: ENTER, h: pseudosym}
   - SYMBOL
-  - '&opt_cmd'
+  - '&opt_sopt'
   NUMBER:
   - {t: ▽, type: trans}
   - '1'
