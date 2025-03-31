@@ -135,10 +135,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7              &kp N8    &kp N9     &kp N0    &kp DEL
-&trans  &none   &none   &none   &none   &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN            &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &none   &none   &none   &none   &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none               &none     &none      &kp END   &kp PG_DN
-                        &trans  &trans  &trans                                                                        &kp INS   &sshift LEFT_SHIFT  &sk RGUI
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DEL
+&trans  &none   &none   &none   &none   &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &kp PG_UP
+&trans  &none   &none   &none   &none   &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &kp END   &kp PG_DN
+                        &trans  &trans  &trans                                                                        &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -150,7 +150,7 @@
 &trans  &kp EXCL  &kp AT           &kp HASH           &kp DLLR               &kp PRCNT                                 &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &trans           &trans  &kp BSPC
 &trans  &none     &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COLON      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &none   &trans
 &trans  &none     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp UNDERSCORE  &trans                    &mmv MOVE_DOWN                   &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none   &trans
-                                   &trans             &sshift LEFT_SHIFT     &kp SPACE                                                                  &kp RET        &trans                 &trans
+                                   &trans             &trans                 &kp SPACE                                                                  &kp RET        &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -161,7 +161,7 @@
 &trans  &none  &none      &none             &none           &none                              &none         &none      &none           &none             &none                 &none  &trans
 &trans  &none  &kp GRAVE  &kp GREATER_THAN  &kp EQUAL       &kp DOUBLE_QUOTES           &none  &none  &none  &kp PLUS   &kp EQUAL       &kp GREATER_THAN  &kp PIPE              &none  &trans
 &trans  &none  &kp TILDE  &kp LESS_THAN     &kp UNDERSCORE  &kp SQT            &none           &none         &kp MINUS  &kp UNDERSCORE  &kp LESS_THAN     &kp NON_US_BACKSLASH  &none  &trans
-                          &trans            &trans          &none                                            &trans     &trans          &trans
+                          &trans            &trans          &trans                                           &trans     &trans          &trans
             >;
 
             label = "pseudosym";
