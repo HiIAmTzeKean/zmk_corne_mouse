@@ -95,9 +95,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - INS
-  - {t: LEFT SHIFT, h: sticky}
-  - {t: RGUI, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   SYMBOL:
   - {t: ▽, type: trans}
   - '!'
@@ -142,7 +142,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: LEFT SHIFT, h: sticky}
+  - {t: ▽, type: trans}
   - SPACE
   - RET
   - {type: held}
@@ -192,7 +192,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
