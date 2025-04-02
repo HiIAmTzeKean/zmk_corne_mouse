@@ -212,17 +212,17 @@ layers:
   - F11
   - '&sys_reset'
   - '&soft_off'
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
   - ''
-  - '&mkp LCLK'
-  - '&mkp MCLK'
-  - '&mkp RCLK'
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
