@@ -31,7 +31,7 @@ layers:
   - '&shift_caps'
   - LCTRL
   - Z
-  - X
+  - {t: X, h: Gui+X}
   - {t: C, h: Gui+C}
   - {t: V, h: Gui+V}
   - B
