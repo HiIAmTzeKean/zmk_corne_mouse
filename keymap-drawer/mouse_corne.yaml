@@ -29,7 +29,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RCTRL}
   - '&shift_caps'
-  - LCTRL
+  - '~'
   - Z
   - {t: X, h: Gui+X}
   - {t: C, h: Gui+C}
@@ -42,7 +42,7 @@ layers:
   - ','
   - .
   - /
-  - RCTRL
+  - QUIT
   - '&cmd_scmd'
   - NUMBER
   - {t: SPACE, h: Fn}
@@ -67,7 +67,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '"'
   - '|'
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
@@ -82,7 +82,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - ''''
   - \
   - MUTE
   - '&mmv MOVE_DOWN'
@@ -171,7 +171,7 @@ layers:
   - ''
   - ''
   - '-'
-  - '='
+  - ''''
   - '>'
   - '|'
   - ''
@@ -185,7 +185,7 @@ layers:
   - ''
   - ''
   - +
-  - _
+  - '"'
   - <
   - \
   - ''
