@@ -42,7 +42,7 @@ layers:
   - ','
   - .
   - /
-  - QUIT
+  - ESC
   - '&cmd_scmd'
   - NUMBER
   - {t: SPACE, h: Fn}
