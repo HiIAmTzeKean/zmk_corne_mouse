@@ -158,10 +158,10 @@
 
         raise_pseudo {
             bindings = <
-&trans  &none  &none      &none             &none      &none                              &none         &none      &none              &none             &none     &none  &trans
-&trans  &none  &kp GRAVE  &kp GREATER_THAN  &kp PLUS   &kp DOUBLE_QUOTES           &none  &none  &none  &kp MINUS  &kp SINGLE_QUOTE   &kp GREATER_THAN  &kp PIPE  &none  &trans
-&trans  &none  &kp TILDE  &kp LESS_THAN     &kp MINUS  &kp SQT            &none           &none         &kp PLUS   &kp DOUBLE_QUOTES  &kp LESS_THAN     &kp BSLH  &none  &trans
-                          &trans            &trans     &trans                                           &trans     &trans             &trans
+&trans  &none  &none      &none             &none      &none                              &none         &none              &none      &none             &none     &none  &trans
+&trans  &none  &kp GRAVE  &kp GREATER_THAN  &kp PLUS   &kp DOUBLE_QUOTES           &none  &none  &none  &kp SQT            &kp MINUS  &kp GREATER_THAN  &kp PIPE  &none  &trans
+&trans  &none  &kp TILDE  &kp LESS_THAN     &kp MINUS  &kp SQT            &none           &none         &kp DOUBLE_QUOTES  &kp PLUS   &kp LESS_THAN     &kp BSLH  &none  &trans
+                          &trans            &trans     &trans                                           &trans             &trans     &trans
             >;
 
             label = "pseudosym";
