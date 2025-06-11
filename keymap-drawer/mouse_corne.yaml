@@ -29,7 +29,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RCTRL}
   - '&shift_caps'
-  - '~'
+  - '`'
   - Z
   - {t: X, h: Gui+X}
   - {t: C, h: Gui+C}
@@ -46,9 +46,9 @@ layers:
   - '&cmd_scmd'
   - NUMBER
   - {t: SPACE, h: Fn}
-  - {t: ENTER, h: pseudosym}
+  - ENTER
   - SYMBOL
-  - '&opt_sopt'
+  - pseudosym
   NUMBER:
   - {t: ▽, type: trans}
   - '1'
@@ -193,9 +193,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Fn:
   - '&studio_unlock'
   - F1
@@ -223,8 +223,8 @@ layers:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '&bootloader'
   - BT CLR
   - OUT USB
@@ -237,8 +237,8 @@ layers:
   - VOL UP
   - BRI DEC
   - BRI INC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
