@@ -77,7 +77,7 @@ layers:
   - UP
   - RIGHT
   - HOME
-  - PG UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -88,10 +88,10 @@ layers:
   - '&mmv MOVE_DOWN'
   - ''
   - ''
-  - ''
-  - ''
-  - END
-  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
