@@ -43,13 +43,13 @@ layers:
   - .
   - /
   - ESC
-  - '&cmd_scmd'
-  - NUMBER
-  - {t: SPACE, h: Fn}
+  - Fn
+  - NUM
+  - SPACE
   - ENTER
-  - SYMBOL
-  - pseudosym
-  NUMBER:
+  - SYM
+  - PSD
+  NUM:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -98,7 +98,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SYMBOL:
+  SYM:
   - {t: ▽, type: trans}
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - RET
   - {type: held}
   - {t: ▽, type: trans}
-  pseudosym:
+  PSD:
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -172,7 +172,7 @@ layers:
   - ''
   - ''''
   - '-'
-  - '>'
+  - <
   - '|'
   - ''
   - {t: ▽, type: trans}
@@ -186,7 +186,7 @@ layers:
   - ''
   - '"'
   - +
-  - <
+  - '>'
   - \
   - ''
   - {t: ▽, type: trans}
@@ -239,9 +239,9 @@ layers:
   - BRI INC
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
