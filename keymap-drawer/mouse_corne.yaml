@@ -43,7 +43,7 @@ layers:
   - .
   - /
   - ESC
-  - Fn
+  - {t: PSD, h: toggle}
   - NUM
   - SPACE
   - ENTER
@@ -239,11 +239,11 @@ layers:
   - BRI INC
   - ''
   - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
 combos:
 - p: [2, 1]
