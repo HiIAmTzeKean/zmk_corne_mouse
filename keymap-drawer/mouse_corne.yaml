@@ -43,12 +43,12 @@ layers:
   - .
   - /
   - ESC
-  - {t: PSD, h: toggle}
+  - {t: SYM, h: toggle}
   - NUM
   - SPACE
   - ENTER
   - SYM
-  - PSD
+  - {t: NUM, h: toggle}
   NUM:
   - {t: ▽, type: trans}
   - '1'
@@ -113,10 +113,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - '}'
-  - ']'
-  - )
+  - '`'
+  - '|'
+  - ''''
+  - +
   - '='
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
@@ -128,10 +128,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - '{'
-  - '['
-  - (
+  - '~'
+  - \
+  - '"'
+  - '-'
   - _
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
@@ -147,55 +147,6 @@ layers:
   - RET
   - {type: held}
   - {t: ▽, type: trans}
-  PSD:
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - '`'
-  - '>'
-  - +
-  - '"'
-  - ''
-  - ''
-  - ''
-  - ''''
-  - '-'
-  - <
-  - '|'
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - '~'
-  - <
-  - '-'
-  - ''''
-  - ''
-  - ''
-  - '"'
-  - +
-  - '>'
-  - \
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   Fn:
   - '&studio_unlock'
   - F1
