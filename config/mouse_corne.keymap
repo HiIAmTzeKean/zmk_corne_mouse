@@ -46,41 +46,6 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
-
-        hold_pref: hold_pref {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_PREF";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        opt_sopt: opt_sopt {
-            compatible = "zmk,behavior-tap-dance";
-            label = "OPT_SOPT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp RALT>, <&kp RS(RIGHT_ALT)>;
-        };
-
-        cmd_scmd: cmd_scmd {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CMD_SCMD";
-            #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&sshift LS(LGUI)>;
-
-            tapping-term-ms = <300>;
-        };
-
-        sshift: sshift {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SSHIFT";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            quick-release;
-            release-after-ms = <1000>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -137,7 +102,7 @@
             bindings = <
 &trans  &kp N1  &kp N2  &kp N3  &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp DEL
 &trans  &none   &none   &none   &kp DOUBLE_QUOTES  &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &none   &none   &none   &kp SQT            &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &trans  &trans     &trans    &trans
+&trans  &none   &none   &none   &kp SQT            &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &none     &trans
                         &trans  &trans             &trans                                                                        &trans    &trans    &trans
             >;
 
@@ -157,7 +122,7 @@
         };
 
         fn {
-            display-name = "Fn";
+            display-name = "FN";
             bindings = <
 &studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4            &kp F5                                                              &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &kp F11
 &sys_reset      &soft_off   &mkp LCLK     &mkp RCLK     &mkp LCLK         &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &none    &none
