@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - BSPC
-  - '&shift_caps'
+  - LEFT SHIFT
   - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LGUI}
@@ -28,7 +28,7 @@ layers:
   - {t: K, h: RGUI}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RCTRL}
-  - '&shift_caps'
+  - RIGHT SHIFT
   - '`'
   - Z
   - {t: X, h: Gui+X}
@@ -200,3 +200,5 @@ combos:
 - p: [2, 1]
   k: ESC
   l: [QWERTY]
+- p: [13, 27]
+  k: '&caps_word'
