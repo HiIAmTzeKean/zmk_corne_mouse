@@ -47,20 +47,11 @@
             flavor = "balanced";
         };
 
-        sticky_shift: sticky_shift {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_SHIFT";
-            bindings = <&none>;
-            #binding-cells = <1>;
-            release-after-ms = <2000>;
-            quick-release;
-        };
-
         shift_sym: shift_sym {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_SYM";
             #binding-cells = <0>;
-            bindings = <&sticky_shift 0>, <&tog 2>;
+            bindings = <&sk LEFT_SHIFT>, <&tog 2>;
         };
     };
 
