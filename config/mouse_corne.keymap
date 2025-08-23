@@ -46,6 +46,22 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        sticky_shift: sticky_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_SHIFT";
+            bindings = <&none>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+            quick-release;
+        };
+
+        shift_sym: shift_sym {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_SYM";
+            #binding-cells = <0>;
+            bindings = <&sticky_shift 0>, <&tog 2>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -73,15 +89,6 @@
         };
     };
 
-    macros {
-        ccopy: copy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(C)>;
-            label = "COPY";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -91,7 +98,7 @@
 &kp TAB      &kp Q                     &kp W                 &kp E              &kp R                   &kp T                             &kp UP                &kp Y      &kp U                    &kp I             &kp O                  &kp P                 &kp BSPC
 &shift_caps  &tap_pref LEFT_CONTROL A  &tap_pref LEFT_ALT S  &tap_pref LGUI D   &tap_pref LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &tap_pref RIGHT_SHIFT J  &tap_pref RGUI K  &tap_pref RIGHT_ALT L  &tap_pref RCTRL SEMI  &shift_caps
 &kp GRAVE    &kp Z                     &tap_pref LG(X) X     &tap_pref LG(C) C  &tap_pref LG(V) V       &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M                    &kp COMMA         &kp DOT                &kp FSLH              &kp ESC
-                                                             &tog 2             &mo 1                   &kp SPACE                                               &kp ENTER  &mo 2                    &tog 1
+                                                             &shift_sym         &mo 1                   &kp SPACE                                               &kp ENTER  &mo 2                    &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
