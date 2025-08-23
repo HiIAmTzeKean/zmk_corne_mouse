@@ -51,7 +51,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_SYM";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&tog 2>;
+            bindings = <&sticky_quick_release LEFT_SHIFT>, <&tog 2>;
+        };
+
+        sticky_quick_release: sticky_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_QUICK_RELEASE";
+            bindings = <&sk>;
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+            quick-release;
         };
     };
 
