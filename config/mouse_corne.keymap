@@ -105,7 +105,7 @@
         quick_fill: quick_fill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp AT &kp B &kp C &kp POUND &kp N1 &kp N2 &kp N3>;
+            bindings = <&kp AT &kp M &kp T &kp H &kp E &kp LS(B) &kp E &kp S &kp T &kp N1 &kp N>;
             label = "quick_fill";
         };
     };
