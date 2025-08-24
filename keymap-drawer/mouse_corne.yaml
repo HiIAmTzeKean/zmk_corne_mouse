@@ -166,7 +166,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - '&mkp LCLK'
-  - AC NEXT KEYBOARD LAYOUT SELECT
+  - GLOBE
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
