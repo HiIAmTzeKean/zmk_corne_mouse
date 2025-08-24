@@ -95,9 +95,18 @@
         };
 
         combo_quick_fill {
-            bindings = <&kp A>;
+            bindings = <&quick_fill>;
             key-positions = <4 5 7 8>;
             layers = <0>;
+        };
+    };
+
+    macros {
+        quick_fill: quick_fill {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT &kp B &kp C &kp POUND &kp N1 &kp N2 &kp N3>;
+            label = "quick_fill";
         };
     };
 
