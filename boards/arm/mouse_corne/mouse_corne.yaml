@@ -1,5 +1,5 @@
 identifier: mouse_corne
-name: Mouse Corne
+name: MouseCorne
 url: https://github.com/HiIAmTzeKean/zmk_corne_mouse
 type: mcu
 arch: arm

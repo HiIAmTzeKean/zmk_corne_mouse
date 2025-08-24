@@ -1,6 +1,6 @@
 file_format: "1"
 id: mouse_corne
-name: Mouse Corne
+name: MouseCorne
 url: https://github.com/HiIAmTzeKean/zmk_corne_mouse
 type: board
 arch: arm
