@@ -95,9 +95,18 @@
         };
 
         combo_quick_fill {
-            bindings = <&kp A>;
+            bindings = <&string KEY_STRING>;
             key-positions = <4 5 7 8>;
             layers = <0>;
+        };
+    };
+
+    strings {
+        compatible = "zmk,strings";
+
+        KEY_STRING: key-string {
+            label = "MyKey";
+            value = "abc123";
         };
     };
 
