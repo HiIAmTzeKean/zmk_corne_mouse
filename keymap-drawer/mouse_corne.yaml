@@ -31,9 +31,9 @@ layers:
   - RIGHT SHIFT
   - '`'
   - Z
-  - {t: X, h: Gui+X}
-  - {t: C, h: Gui+C}
-  - {t: V, h: Gui+V}
+  - X
+  - C
+  - V
   - B
   - SPACE
   - DOWN
