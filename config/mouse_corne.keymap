@@ -139,10 +139,10 @@
         symbol {
             display-name = "SYM";
             bindings = <
-&trans  &kp EXCL   &kp AT         &kp HASH           &kp DLLR   &kp PRCNT                                 &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &none            &none  &trans
-&trans  &kp GRAVE  &kp PIPE       &kp SINGLE_QUOTE   &kp PLUS   &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COLON      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &none  &trans
-&trans  &kp TILDE  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp MINUS  &kp UNDERSCORE  &trans                    &mmv MOVE_DOWN                   &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none  &trans
-                                  &trans             &trans     &kp SPACE                                                                  &kp RET        &trans                 &trans
+&trans  &kp EXCL   &kp AT         &kp HASH           &kp DLLR        &kp PRCNT                            &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &none            &none  &trans
+&trans  &kp GRAVE  &kp PIPE       &kp SINGLE_QUOTE   &kp MINUS       &kp PLUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COLON      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &none  &trans
+&trans  &kp TILDE  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp EQUAL  &trans                    &mmv MOVE_DOWN                   &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none  &trans
+                                  &trans             &trans          &kp SPACE                                                             &kp RET        &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
