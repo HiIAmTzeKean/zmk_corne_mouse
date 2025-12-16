@@ -116,8 +116,8 @@ layers:
   - '`'
   - '|'
   - ''''
+  - '-'
   - +
-  - '='
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
@@ -131,8 +131,8 @@ layers:
   - '~'
   - \
   - '"'
-  - '-'
   - _
+  - '='
   - {t: ▽, type: trans}
   - '&mmv MOVE_DOWN'
   - ;
