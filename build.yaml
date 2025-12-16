@@ -1,6 +1,4 @@
 include:
-  - board: mouse_corne
-    shield: settings_reset
   - board: mouse_corne_right
     shield: nice_view
   - board: mouse_corne_left
