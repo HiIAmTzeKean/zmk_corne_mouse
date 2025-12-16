@@ -63,7 +63,7 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - ''
   - ''
   - ''
@@ -166,7 +166,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - '&mkp LCLK'
-  - CAPSLOCK
+  - ''
   - '&mmv MOVE_LEFT'
   - '&mkp LCLK'
   - '&mmv MOVE_RIGHT'
