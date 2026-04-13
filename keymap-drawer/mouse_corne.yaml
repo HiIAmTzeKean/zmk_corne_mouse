@@ -48,7 +48,7 @@ layers:
   - SPACE
   - ENTER
   - SYM
-  - {t: NUM, h: toggle}
+  - {t: TAB, h: NUM}
   NUM:
   - {t: ▽, type: trans}
   - '1'
@@ -63,8 +63,8 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - CAPSLOCK
-  - ''
   - ''
   - ''
   - '"'
