@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mouse_corne}
 layers:
   QWERTY:
-  - TAB
+  - ''
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - BSPC
-  - LEFT SHIFT
+  - ''
+  - ''
   - {t: A, h: LEFT CONTROL}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LGUI}
@@ -27,9 +27,9 @@ layers:
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: RGUI}
   - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCTRL}
-  - RIGHT SHIFT
-  - '`'
+  - {t: BACKSPACE, h: RCTRL}
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -41,14 +41,14 @@ layers:
   - M
   - ','
   - .
-  - /
-  - ESC
-  - '&shift_sym'
+  - ESCAPE
+  - ''
+  - {t: TAB, h: LEFT SHIFT}
   - NUM
   - SPACE
   - ENTER
   - SYM
-  - {t: TAB, h: NUM}
+  - {t: '`', h: NUM}
   NUM:
   - {t: ▽, type: trans}
   - '1'
