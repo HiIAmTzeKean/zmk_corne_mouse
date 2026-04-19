@@ -200,9 +200,6 @@ combos:
 - p: [2, 1]
   k: ESC
   l: [QWERTY]
-- p: [13, 27]
-  k: '&caps_word'
-  l: [QWERTY]
 - p: [4, 5, 7, 8]
   k: '&quick_fill'
   l: [QWERTY]
