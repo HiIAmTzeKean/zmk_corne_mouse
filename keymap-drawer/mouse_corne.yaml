@@ -50,7 +50,7 @@ layers:
   - SYM
   - {t: '`', h: NUM}
   NUM:
-  - {t: ▽, type: trans}
+  - ''
   - '1'
   - '2'
   - '3'
@@ -63,7 +63,7 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - CAPSLOCK
   - ''
   - ''
@@ -78,7 +78,7 @@ layers:
   - RIGHT
   - HOME
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - ''
   - ''
@@ -143,8 +143,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   Fn:
