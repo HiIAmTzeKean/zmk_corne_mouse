@@ -69,6 +69,11 @@
             key-positions = <4 5 7 8>;
             layers = <0>;
         };
+
+        sticky_shift {
+            bindings = <&sticky_quick_release LEFT_SHIFT>;
+            key-positions = <42 47>;
+        };
     };
 
     macros {
