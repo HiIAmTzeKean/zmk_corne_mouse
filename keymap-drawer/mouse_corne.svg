@@ -338,6 +338,15 @@ path.combo {
 <rect rx="6" ry="6" x="476" y="25" width="28" height="26" class="combo"/>
 <text x="490" y="38" class="combo tap"><tspan style="font-size: 64%">&amp;quick_fill</tspan></text>
 </g>
+<g class="combo combopos-2">
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<text x="490" y="203" class="combo tap">
+<tspan x="490" dy="-0.6em">LEFT</tspan><tspan x="490" dy="1.2em">SHIFT</tspan>
+</text>
+<text x="490" y="214" class="combo hold">sticky</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 318)" class="layer-NUM">
@@ -530,6 +539,15 @@ path.combo {
 <g transform="translate(756, 203)" class="key trans keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<text x="490" y="203" class="combo tap">
+<tspan x="490" dy="-0.6em">LEFT</tspan><tspan x="490" dy="1.2em">SHIFT</tspan>
+</text>
+<text x="490" y="214" class="combo hold">sticky</text>
 </g>
 </g>
 </g>
@@ -732,6 +750,15 @@ path.combo {
 <g transform="translate(756, 203)" class="key trans keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<text x="490" y="203" class="combo tap">
+<tspan x="490" dy="-0.6em">LEFT</tspan><tspan x="490" dy="1.2em">SHIFT</tspan>
+</text>
+<text x="490" y="214" class="combo hold">sticky</text>
 </g>
 </g>
 </g>
@@ -956,6 +983,15 @@ path.combo {
 <g transform="translate(756, 203)" class="key trans keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<text x="490" y="203" class="combo tap">
+<tspan x="490" dy="-0.6em">LEFT</tspan><tspan x="490" dy="1.2em">SHIFT</tspan>
+</text>
+<text x="490" y="214" class="combo hold">sticky</text>
 </g>
 </g>
 </g>

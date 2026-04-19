@@ -203,3 +203,5 @@ combos:
 - p: [4, 5, 7, 8]
   k: '&quick_fill'
   l: [QWERTY]
+- p: [42, 47]
+  k: {t: LEFT SHIFT, h: sticky}
