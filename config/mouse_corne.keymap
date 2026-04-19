@@ -45,13 +45,6 @@
             release-after-ms = <2000>;
             quick-release;
         };
-
-        shift_sym: shift_sym {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SHIFT_SYM";
-            #binding-cells = <0>;
-            bindings = <&sticky_quick_release LEFT_SHIFT>, <&tog 2>;
-        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -105,10 +98,10 @@
         number {
             display-name = "NUM";
             bindings = <
-&trans  &kp N1        &kp N2  &kp N3  &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &trans
-&trans  &kp CAPSLOCK  &none   &none   &kp DOUBLE_QUOTES  &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&trans  &none         &none   &none   &kp SQT            &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &none     &trans
-                              &trans  &trans             &trans                                                                        &trans    &trans    &trans
+&none  &kp N1        &kp N2  &kp N3  &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &trans
+&none  &kp CAPSLOCK  &none   &none   &kp DOUBLE_QUOTES  &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
+&none  &none         &none   &none   &kp SQT            &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &none     &trans
+                             &trans  &trans             &trans                                                                        &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -120,7 +113,7 @@
 &trans  &kp EXCL   &kp AT         &kp HASH           &kp DLLR        &kp PRCNT                            &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &none            &none  &trans
 &trans  &kp GRAVE  &kp PIPE       &kp SINGLE_QUOTE   &kp MINUS       &kp PLUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COLON      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &none  &trans
 &trans  &kp TILDE  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp EQUAL  &trans                    &mmv MOVE_DOWN                   &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none  &trans
-                                  &trans             &trans          &kp SPACE                                                             &kp RET        &trans                 &trans
+                                  &trans             &trans          &trans                                                                &trans         &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
