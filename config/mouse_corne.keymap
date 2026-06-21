@@ -88,53 +88,53 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default {
-            display-name = "QWERTY";
+        base {
+            display-name = "BASE";
             bindings = <
 &none  &kp Q                     &kp W                 &kp E                     &kp R                   &kp T                             &kp UP                &kp Y      &kp U                    &kp I             &kp O                  &kp P                      &none
-&none  &tap_pref LEFT_CONTROL A  &tap_pref LEFT_ALT S  &tap_pref LGUI D          &tap_pref LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &tap_pref RIGHT_SHIFT J  &tap_pref RGUI K  &tap_pref RIGHT_ALT L  &tap_pref RCTRL BACKSPACE  &none
-&none  &kp Z                     &kp X                 &kp C                     &kp V                   &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M                    &kp COMMA         &kp DOT                &kp ESCAPE                 &none
-                                                       &tap_pref LEFT_SHIFT TAB  &mo 1                   &kp SPACE                                               &kp ENTER  &mo 2                    &lt 1 GRAVE
+&none  &tap_pref LEFT_CONTROL A  &tap_pref LEFT_ALT S  &tap_pref LGUI D          &tap_pref LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &tap_pref RIGHT_SHIFT J  &tap_pref RGUI K  &tap_pref RIGHT_ALT L  &tap_pref RCTRL SEMI   &none
+&none  &kp Z                     &kp X                 &kp C                     &kp V                   &kp B      &kp SPACE              &kp DOWN              &kp N      &kp M                    &kp COMMA         &kp DOT                &kp FSLH                 &none
+                                                       &kp TAB                   &mo 1                   &kp SPACE                                               &kp RET    &mo 2                    &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        number {
-            display-name = "NUM";
+        nav {
+            display-name = "NAV";
             bindings = <
-&none  &kp N1        &kp N2  &kp N3  &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &trans
-&none  &kp CAPSLOCK  &none   &none   &kp DOUBLE_QUOTES  &kp PIPE                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &trans
-&none  &none         &none   &none   &kp SQT            &kp BACKSLASH  &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &none     &trans
-                             &trans  &trans             &trans                                                                        &trans    &trans    &trans
+&none  &kp N1        &kp N2  &kp N3  &kp N4             &kp N5                                       &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &none
+&none  &kp CAPSLOCK  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp HOME  &none
+&none  &studio_unlock  &none   &none   &none            &none          &kp C_MUTE                    &mmv MOVE_DOWN                   &none     &none     &none   &none      &none     &none
+                                      &trans  &none      &trans                                                                        &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        symbol {
+        sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp EXCL   &kp AT         &kp HASH           &kp DLLR        &kp PRCNT                            &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &none            &none  &trans
-&trans  &kp GRAVE  &kp PIPE       &kp SINGLE_QUOTE   &kp MINUS       &kp PLUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COLON      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &none  &trans
-&trans  &kp TILDE  &kp BACKSLASH  &kp DOUBLE_QUOTES  &kp UNDERSCORE  &kp EQUAL  &trans                    &mmv MOVE_DOWN                   &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none  &trans
-                                  &trans             &trans          &trans                                                                &trans         &trans                 &trans
+&none  &kp EXCL   &kp AT         &kp HASH           &kp DLLR        &kp PRCNT                            &mmv MOVE_UP                     &kp CARET      &kp AMPS               &kp ASTRK          &kp LPAR  &kp RPAR  &none
+&none  &kp GRAVE  &none          &none              &none            &kp SQT              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS      &kp EQUAL              &kp LBKT          &kp RBKT   &kp BSLH  &none
+&none  &kp TILDE  &none          &none              &none            &kp DOUBLE_QUOTES    &trans           &mmv MOVE_DOWN                   &kp UNDER      &kp PLUS               &kp LBRC          &kp RBRC   &kp PIPE  &none
+                                  &trans             &trans           &trans                                                                   &trans         &trans                 &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        fn {
-            display-name = "FN";
+        adj {
+            display-name = "ADJ";
             bindings = <
-&studio_unlock  &kp F1      &kp F2        &kp F3        &kp F4            &kp F5                                    &mmv MOVE_UP                     &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &kp F11
-&sys_reset      &soft_off   &mkp LCLK     &mkp RCLK     &mkp LCLK         &none                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none         &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &none    &none
-&bootloader     &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DEC  &kp C_BRI_INC  &none    &none
-                                          &trans        &trans            &trans                                                                     &trans        &trans        &trans
+&none  &none      &kp F7  &kp F8  &kp F9  &kp F12               &mmv MOVE_UP         &kp C_VOL_DN       &kp C_MUTE      &kp C_VOL_UP       &none  &none  &none
+&none  &studio_unlock  &kp F4  &kp F5  &kp F6  &kp F11  &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP  &none  &none  &none
+&none  &bootloader   &kp F1  &kp F2  &kp F3  &kp F10   &trans         &mmv MOVE_DOWN       &none              &none       &none            &none  &none  &none
+                                    &none  &none    &trans                                                  &trans    &trans  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            label = "Fn";
+            label = "ADJ";
         };
     };
 
