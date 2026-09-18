@@ -76,7 +76,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - HOME
+  - ''
   - ''
   - ''
   - '&studio_unlock'
@@ -86,10 +86,10 @@ layers:
   - ''
   - MUTE
   - '&mmv MOVE_DOWN'
-  - ''
-  - ''
-  - ''
-  - ''
+  - A
+  - S
+  - PAGE DOWN
+  - PAGE UP
   - ''
   - ''
   - {t: ▽, type: trans}
